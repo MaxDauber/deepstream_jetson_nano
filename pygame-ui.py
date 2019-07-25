@@ -1,6 +1,6 @@
 #
-# genz demo selector
-# 2018/04/02 - duane_voth@dell.com
+# deepstream-UI
+# Max_Dauber@Dell.com
 
 import os
 import sys
@@ -36,7 +36,7 @@ Size = [Button_size * len(Buttons) + Wbrdr * 2,  Button_size + Wbrdr * 2]
 pygame.display.set_caption(WindowName)
 screen = pygame.display.set_mode(Size, pygame.NOFRAME)
 # /usr/share/fonts/truetype/...
-button_font = pygame.font.Font('gzfont.ttf', 18)
+#button_font = pygame.font.Font('gzfont.ttf', 18)
 
 #wminfo = pygame.display.get_wm_info()['window']
 #print(wminfo)
