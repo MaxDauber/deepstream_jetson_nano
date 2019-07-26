@@ -1,0 +1,8 @@
+Flask
+click
+itsdangerous
+Jinja2
+MarkupSafe
+numpy
+opencv-python
+Werkzeug
