@@ -15,14 +15,14 @@ perf-measurement-interval-sec=5
 enable=1
 rows=1
 columns=1
-width=1280
+width=1080
 height=720
 
 [source0]
 enable=1
 #Type - 1=CameraV4L2 2=URI 3=MultiURI
 type=1
-camera-width=1280
+camera-width=1080
 camera-height=720
 camera-fps-n=30
 camera-fps-d=1
@@ -54,7 +54,7 @@ output-file=out.mp4
 source-id=0
 
 [sink2]
-enable=0
+enable=1
 #Type - 1=FakeSink 2=EglSink 3=File 4=RTSPStreaming 5=Overlay
 type=4
 #1=h264 2=h265
@@ -87,7 +87,7 @@ batch-size=1
 ##to push the batch even if the complete batch is not formed
 batched-push-timeout=40000
 ## Set muxer output width and height
-width=1280
+width=1080
 height=720
 
 # config-file property is mandatory for any gie section.
@@ -95,7 +95,7 @@ height=720
 # the infer config file.
 [primary-gie]
 enable=1
-model-engine-file=../../models/Primary_Detector/resnet10.caffemodel_b30_int8.engine
+model-engine-file=~/models/Primary_Detector/resnet10.caffemodel_b30_int8.engine
 #Required to display the PGIE labels, should be added even when using config-file
 #property
 batch-size=1
